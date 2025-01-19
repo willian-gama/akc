@@ -2,9 +2,9 @@ name: android_ci
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ] # Rename it to enable it
   pull_request:
-    branches: [ "develop" , "main" ]
+    branches: [ "master"  ] # Rename it to enable it
 
 concurrency:
   group: ${{ github.ref }}
