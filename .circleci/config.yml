@@ -14,6 +14,7 @@ workflows:
             - automation/android_setup
       - automation/android_screenshot_tests:
           build_variant: debug
+          parallelism: 2
           requires:
             - automation/android_setup
       - automation/android_ui_tests:
